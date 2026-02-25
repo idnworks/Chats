@@ -11,3 +11,29 @@ if (passwordPolicy == null) {
 
 String accountPassword = new PasswordGenerator(context).generatePassword(passwordPolicy);
 return accountPassword;
+
+
+
+import sailpoint.api.PasswordGenerator;
+import sailpoint.object.PasswordPolicy;
+import sailpoint.tools.GeneralException;
+
+String PASSWORD_POLICY = "SIQ-PasswordPolicy-DBM-MariaDB";
+String accountPassword = "";
+
+try {
+
+    PasswordPolicy passwordPolicy = context.getObjectByName(PasswordPolicy.class, PASSWORD_POLICY);
+
+    if (passwordPolicy == null) {
+        throw new GeneralException("PasswordPolicy not found: " + PASSWORD_POLICY);
+    }
+
+    accountPassword = new PasswordGenerator(context).generatePassword(passwordPolicy);
+
+} catch (GeneralException e) {
+    log.error("Error generating password", e);
+    throw e;   // rethrow so workflow/rule fails properly
+}
+
+return accountPassword;
