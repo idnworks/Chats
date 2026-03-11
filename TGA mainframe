@@ -1,39 +1,1054 @@
-import sailpoint.api.PasswordGenerator;
-import sailpoint.object.PasswordPolicy;
-import sailpoint.tools.GeneralException;
-
-String PASSWORD_POLICY = "SIQ-PasswordPolicy-DBM-MariaDB";
-PasswordPolicy passwordPolicy = context.getObjectByName(PasswordPolicy.class, PASSWORD_POLICY);
-
-if (passwordPolicy == null) {
-    throw new GeneralException("PasswordPolicy not found: " + PASSWORD_POLICY);
+{
+    "schemas": [
+        "urn:ietf:params:scim:api:messages:2.0:ListResponse"
+    ],
+    "totalResults": 30,
+    "startIndex": 1,
+    "itemsPerPage": 100,
+    "Resources": [
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "AIXPUD2@nonprod.key",
+            "emails": [
+                {
+                    "value": "AIXPUD2@nonprod.key",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Aixpuser",
+                "givenName": "DirectRehire"
+            },
+            "displayName": "Aixpuser, DirectRehire",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/0431825c-c4e5-471a-bddb-1b9429f873b4",
+                "lastModified": "2026-03-02T11:35:06.385106832Z",
+                "created": "2026-03-02T11:35:06.385106832Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:b17fd893-9cd8-4d51-8930-5e6e8a642657"
+            },
+            "id": "0431825c-c4e5-471a-bddb-1b9429f873b4",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0"
+            ],
+            "userName": "SIQtest7@test.com",
+            "emails": [
+                {
+                    "value": "SIQtest7@test.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test7",
+                "givenName": "SIQ"
+            },
+            "displayName": "SIQ Test7",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/0d71af78-b669-4ddf-a3f3-d431e976cac7",
+                "lastModified": "2026-03-11T13:29:12.681885221Z",
+                "created": "2026-03-11T13:29:12.681885221Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:ddc06694-3597-4256-86c8-ef82bd4bbd89"
+            },
+            "id": "0d71af78-b669-4ddf-a3f3-d431e976cac7",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "test1@keybank.con",
+            "emails": [
+                {
+                    "value": "test1@keybank.con",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Gagnon",
+                "givenName": "Steven"
+            },
+            "displayName": "Gagnon, Steven L",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/0ea5255d-aebb-4a5e-ac73-3526b7e51d12",
+                "lastModified": "2026-03-06T11:03:18.615686227Z",
+                "created": "2026-03-06T11:03:18.615686227Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:3227553b-9977-4231-a911-686c5a2b2f46"
+            },
+            "id": "0ea5255d-aebb-4a5e-ac73-3526b7e51d12",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "FIVEPP2@nonprod.key",
+            "emails": [
+                {
+                    "value": "FIVEPP2@nonprod.key",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Fivepuser",
+                "givenName": "PreRehire"
+            },
+            "displayName": "Fivepuser, PreRehire E",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/138af86d-2824-4f0a-8e11-bb0213b0d8b2",
+                "lastModified": "2026-03-04T08:55:14.639881463Z",
+                "created": "2026-03-04T08:55:14.639881463Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:7af7a0dd-9f50-4380-ac4d-42c770c4cae0"
+            },
+            "id": "138af86d-2824-4f0a-8e11-bb0213b0d8b2",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "SOEXUPR@nonprod.key",
+            "emails": [
+                {
+                    "value": "SOEXUPR@nonprod.key",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Soexuser",
+                "givenName": "PreJoiner"
+            },
+            "displayName": "Soexuser, PreJoiner",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/230737f9-a474-4aaf-b77f-220cfec5199a",
+                "lastModified": "2026-03-05T10:17:15.355829057Z",
+                "created": "2026-02-27T07:46:04.033848489Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:14ea9440-6181-43f3-bf01-99369213a26a"
+            },
+            "id": "230737f9-a474-4aaf-b77f-220cfec5199a",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "DirectJoiner_E_Fridvepenuser@keybank.com",
+            "emails": [
+                {
+                    "value": "DirectJoiner_E_Fridvepenuser@keybank.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "DirectJoiner",
+                "givenName": "Fridvepenuser"
+            },
+            "displayName": "Fridvepenuser, DirectJoiner E",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/27a3a7df-1f00-4ad4-b806-7db10c2737bb",
+                "lastModified": "2026-03-10T11:57:47.905819921Z",
+                "created": "2026-03-10T09:04:50.791055292Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:87fa4715-53d3-4d49-a733-7141d04da20c"
+            },
+            "id": "27a3a7df-1f00-4ad4-b806-7db10c2737bb",
+            "active": false
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "SIQtest8@test.com",
+            "emails": [
+                {
+                    "value": "SIQtest8@test.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test8",
+                "givenName": "SIQ"
+            },
+            "displayName": "SIQ Test8",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/2a19d8cf-04e6-4fde-9a97-37a9e382da95",
+                "lastModified": "2026-03-11T13:36:49.712204855Z",
+                "created": "2026-03-11T13:36:49.712204855Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:90cfdc34-99ce-402a-b5f5-36428a21078e"
+            },
+            "id": "2a19d8cf-04e6-4fde-9a97-37a9e382da95",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "LRRGNTA@nonprod.key",
+            "emails": [
+                {
+                    "value": "LRRGNTA@nonprod.key",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Testexam22",
+                "givenName": "Testuser22"
+            },
+            "displayName": "Testexam22, Testuser22 E",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/393ffbcb-c4c9-4fe8-aa62-2eeaf31771c9",
+                "lastModified": "2026-03-04T09:03:12.51786264Z",
+                "created": "2026-03-04T08:58:11.139953223Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:8fcd1f1d-69e2-4aa3-aa0a-bb9c3090cf69"
+            },
+            "id": "393ffbcb-c4c9-4fe8-aa62-2eeaf31771c9",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "LGNNUT5@nonprod.key",
+            "emails": [
+                {
+                    "value": "LGNNUT5@nonprod.key",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Oneauser",
+                "givenName": "Bot"
+            },
+            "displayName": "Oneauser, Bot",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/3e444e78-e8d8-4221-8ed5-2cc633fc9ffd",
+                "lastModified": "2026-02-27T07:22:28.099227841Z",
+                "created": "2026-02-27T07:22:28.099227841Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:336326d5-7773-41c7-9c2c-511ee863568b"
+            },
+            "id": "3e444e78-e8d8-4221-8ed5-2cc633fc9ffd",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "SIQtest2@test.com",
+            "emails": [
+                {
+                    "value": "SIQtest2@test.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test2",
+                "givenName": "SIQ"
+            },
+            "displayName": "SIQ Test2",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/48def5bc-73dc-4374-b6b9-c540439cbe3b",
+                "lastModified": "2026-02-27T07:25:46.034031277Z",
+                "created": "2026-02-27T07:25:46.034031277Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:6eef413e-11a1-4774-ac0a-73572405c240"
+            },
+            "id": "48def5bc-73dc-4374-b6b9-c540439cbe3b",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "SIQtest4@test.com",
+            "emails": [
+                {
+                    "value": "SIQtest4@test.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test4",
+                "givenName": "SIQ"
+            },
+            "displayName": "SIQ Test4",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/4a5e2bb1-8a32-444d-aa64-cc7337a8610a",
+                "lastModified": "2026-03-10T07:00:21.108964842Z",
+                "created": "2026-03-10T07:00:21.108964842Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:c938ad50-61cf-4c21-b8e5-a84c2779c335"
+            },
+            "id": "4a5e2bb1-8a32-444d-aa64-cc7337a8610a",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "SIQtest@test.com",
+            "emails": [
+                {
+                    "value": "SIQtest@test.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test",
+                "givenName": "SIQ"
+            },
+            "displayName": "SIQ Test",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/4cf1d2fa-bc3a-41f1-afb4-32f275ebc367",
+                "lastModified": "2026-02-27T08:33:47.444997216Z",
+                "created": "2026-02-26T09:25:39.701450974Z"
+            },
+            "groups": [
+                {
+                    "type": "Group",
+                    "value": "474f0c72-424e-482d-b611-f02f328356f0",
+                    "display": "SIQ Test Group 2",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/474f0c72-424e-482d-b611-f02f328356f0"
+                }
+            ],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:86cd599d-59f0-4c2c-9956-984b184474e3"
+            },
+            "id": "4cf1d2fa-bc3a-41f1-afb4-32f275ebc367",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "test4@KeyBank.com",
+            "emails": [
+                {
+                    "value": "test4@KeyBank.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "terereesteith",
+                "givenName": "rrZEMreIAL"
+            },
+            "displayName": "rrZEMreIAL, terereesteith F",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/596f60f4-ae95-4674-8873-646e777717c8",
+                "lastModified": "2026-03-10T12:01:00.559887607Z",
+                "created": "2026-03-10T11:58:15.294547789Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:15101ab1-a4f3-406a-b183-d99eb944dc58"
+            },
+            "id": "596f60f4-ae95-4674-8873-646e777717c8",
+            "active": false
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "SIQtest6@test.com",
+            "emails": [
+                {
+                    "value": "SIQtest6@test.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test6",
+                "givenName": "SIQ"
+            },
+            "displayName": "SIQ Test6",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/59c05907-0452-4985-9617-df7cab7315a9",
+                "lastModified": "2026-03-11T13:28:24.263006768Z",
+                "created": "2026-03-11T13:28:24.263006768Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:83433285-0f70-417a-99f2-87a5e14a0944"
+            },
+            "id": "59c05907-0452-4985-9617-df7cab7315a9",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "test1@KeyBank.com",
+            "emails": [
+                {
+                    "value": "test1@KeyBank.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "TestOne",
+                "givenName": "AemailCIF"
+            },
+            "displayName": "AemailCIF, TestOne F",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/5ff1d943-7513-49b1-8540-1e2958bf7b07",
+                "lastModified": "2026-03-10T11:48:57.28608278Z",
+                "created": "2026-03-10T11:48:57.28608278Z"
+            },
+            "groups": [
+                {
+                    "type": "Group",
+                    "value": "dc3b901b-1d95-459b-b7b6-5e69c4242f78",
+                    "display": "confluence-users",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/dc3b901b-1d95-459b-b7b6-5e69c4242f78"
+                }
+            ],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:397748f7-dd2c-4e7e-a63f-f9f7a98300b7"
+            },
+            "id": "5ff1d943-7513-49b1-8540-1e2958bf7b07",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User"
+            ],
+            "userName": "testuser1234@keybank.com",
+            "emails": [
+                {
+                    "value": "testuser1234@keybank.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Guvvala",
+                "givenName": "test user"
+            },
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/703f28b8-b28e-407e-9fa2-25745543a44f",
+                "lastModified": "2026-03-10T10:52:31.588632685Z",
+                "created": "2026-03-10T10:33:56.656587293Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:24a87f85-b12e-478f-837f-b08c8d972000"
+            },
+            "id": "703f28b8-b28e-407e-9fa2-25745543a44f",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "DnPirectJoiner_DnPaxuuser@keybank.com",
+            "emails": [
+                {
+                    "value": "DnPirectJoiner_DnPaxuuser@keybank.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "DnPirectJoiner",
+                "givenName": "DnPaxuuser"
+            },
+            "displayName": "DnPaxuuser, DnPirectJoiner",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/81b6aebe-2537-44b4-839f-0a1454c16b90",
+                "lastModified": "2026-03-10T08:46:40.961634096Z",
+                "created": "2026-03-10T08:46:40.961634096Z"
+            },
+            "groups": [
+                {
+                    "type": "Group",
+                    "value": "91e585e8-5a51-486c-9e8c-6aba214e8711",
+                    "display": "Jira-software-users",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/91e585e8-5a51-486c-9e8c-6aba214e8711"
+                },
+                {
+                    "type": "Group",
+                    "value": "dc3b901b-1d95-459b-b7b6-5e69c4242f78",
+                    "display": "confluence-users",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/dc3b901b-1d95-459b-b7b6-5e69c4242f78"
+                }
+            ],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:eb3ff8cd-76e3-4ee9-963a-ef64dbdd7494"
+            },
+            "id": "81b6aebe-2537-44b4-839f-0a1454c16b90",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "SIQtest5@test.com",
+            "emails": [
+                {
+                    "value": "SIQtest5@test.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test5",
+                "givenName": "SIQ"
+            },
+            "displayName": "SIQ Test5",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/8a46940f-81a5-4280-8ef6-bcbd0f985603",
+                "lastModified": "2026-03-10T07:04:22.824007945Z",
+                "created": "2026-03-10T07:04:22.824007945Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:5c0be0a7-20fe-426e-b6dd-fc4fe181561d"
+            },
+            "id": "8a46940f-81a5-4280-8ef6-bcbd0f985603",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "RKONAPR@nonprod.key",
+            "emails": [
+                {
+                    "value": "RKONAPR@nonprod.key",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "RkonaldJohn",
+                "givenName": "PreJoiner"
+            },
+            "displayName": "RkonaldJohn, PreJoiner",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/93a47f56-fff5-47c7-bed9-d7e9c7205326",
+                "lastModified": "2026-02-27T07:29:12.700255452Z",
+                "created": "2026-02-27T07:29:12.700255452Z"
+            },
+            "groups": [
+                {
+                    "type": "Group",
+                    "value": "3b4b4a0b-dbca-47d0-9433-587c2938f41a",
+                    "display": "SIQ Test Group",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/3b4b4a0b-dbca-47d0-9433-587c2938f41a"
+                },
+                {
+                    "type": "Group",
+                    "value": "474f0c72-424e-482d-b611-f02f328356f0",
+                    "display": "SIQ Test Group 2",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/474f0c72-424e-482d-b611-f02f328356f0"
+                }
+            ],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:ea866ca2-5323-4764-b805-af6169e1d75d"
+            },
+            "id": "93a47f56-fff5-47c7-bed9-d7e9c7205326",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User"
+            ],
+            "userName": "SIQtest10@test.com",
+            "emails": [
+                {
+                    "value": "SIQtest10@test.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test10",
+                "givenName": "SIQ"
+            },
+            "displayName": "SIQ Test10",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/9f28e690-ec87-4b26-a14c-9ecd333e0772",
+                "lastModified": "2026-03-11T13:38:30.700056958Z",
+                "created": "2026-03-11T13:38:30.700056958Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:f770cc87-e411-4ac6-b48e-ab1e23b3be96"
+            },
+            "id": "9f28e690-ec87-4b26-a14c-9ecd333e0772",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User"
+            ],
+            "userName": "SIQtest9@test.com",
+            "emails": [
+                {
+                    "value": "SIQtest9@test.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test9",
+                "givenName": "SIQ"
+            },
+            "displayName": "SIQ Test9",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/a1bbec09-3a11-42f0-9021-dd567f00a82b",
+                "lastModified": "2026-03-11T13:38:12.056307548Z",
+                "created": "2026-03-11T13:38:12.056307548Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:72b5ea00-ec9c-4315-aa25-260e680a0328"
+            },
+            "id": "a1bbec09-3a11-42f0-9021-dd567f00a82b",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "NINEPPI@nonprod.key",
+            "emails": [
+                {
+                    "value": "NINEPPI@nonprod.key",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Ninepuser",
+                "givenName": "PreJoiner"
+            },
+            "displayName": "Ninepuser, PreJoiner E",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/a6c2e36d-28d9-4f76-97ab-9377013c7855",
+                "lastModified": "2026-02-27T09:43:30.699704984Z",
+                "created": "2026-02-27T09:43:30.699704984Z"
+            },
+            "groups": [
+                {
+                    "type": "Group",
+                    "value": "3b4b4a0b-dbca-47d0-9433-587c2938f41a",
+                    "display": "SIQ Test Group",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/3b4b4a0b-dbca-47d0-9433-587c2938f41a"
+                },
+                {
+                    "type": "Group",
+                    "value": "474f0c72-424e-482d-b611-f02f328356f0",
+                    "display": "SIQ Test Group 2",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/474f0c72-424e-482d-b611-f02f328356f0"
+                }
+            ],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:bab3394c-3ac2-49bb-a64c-9fa1ca65d092"
+            },
+            "id": "a6c2e36d-28d9-4f76-97ab-9377013c7855",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "SIQtest3@test.com",
+            "emails": [
+                {
+                    "value": "SIQtest3@test.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test3",
+                "givenName": "SIQ"
+            },
+            "displayName": "SIQ Test3",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/b36f5229-08b1-4ad9-8a07-07b723b9a115",
+                "lastModified": "2026-03-10T06:55:17.443533081Z",
+                "created": "2026-03-10T06:55:17.443533081Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:428daaff-fa01-49e1-b3ae-9b54f22d47d8"
+            },
+            "id": "b36f5229-08b1-4ad9-8a07-07b723b9a115",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "SIXPUDI@nonprod.key",
+            "emails": [
+                {
+                    "value": "SIXPUDI@nonprod.key",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Sixpuser",
+                "givenName": "DirectJoiner"
+            },
+            "displayName": "Sixpuser, DirectJoiner",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/b4f07ce4-e6d6-4472-bf30-45ef3f53454a",
+                "lastModified": "2026-02-27T07:39:16.086307996Z",
+                "created": "2026-02-27T07:39:16.086307996Z"
+            },
+            "groups": [
+                {
+                    "type": "Group",
+                    "value": "3b4b4a0b-dbca-47d0-9433-587c2938f41a",
+                    "display": "SIQ Test Group",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/3b4b4a0b-dbca-47d0-9433-587c2938f41a"
+                }
+            ],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:0eb9425c-0797-468c-8eff-ee97b340456e"
+            },
+            "id": "b4f07ce4-e6d6-4472-bf30-45ef3f53454a",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User"
+            ],
+            "userName": "testuser1235@keybank.com",
+            "emails": [
+                {
+                    "value": "testuser1235@keybank.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test",
+                "givenName": "test user"
+            },
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/ccd67a08-1083-4b73-a907-59e4c7a50a66",
+                "lastModified": "2026-03-10T10:52:04.788711995Z",
+                "created": "2026-03-10T10:52:04.788711995Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:b35cc5dd-bdba-40fa-8592-0d9a60875733"
+            },
+            "id": "ccd67a08-1083-4b73-a907-59e4c7a50a66",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User"
+            ],
+            "userName": "Pradnya_Mahurkar@KeyBank.com",
+            "emails": [
+                {
+                    "value": "Pradnya_Mahurkar@KeyBank.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Mahurkar",
+                "givenName": "Pradnya"
+            },
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/cde075c4-2df8-40c3-baf9-a8d44876a653",
+                "lastModified": "2026-03-09T21:29:29.481104527Z",
+                "created": "2026-03-09T21:29:29.481104527Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:09b67fa9-67f1-498b-9e61-7bd3b6005c4f"
+            },
+            "id": "cde075c4-2df8-40c3-baf9-a8d44876a653",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "test_J_Madore@KeyBank.com",
+            "emails": [
+                {
+                    "value": "test_J_Madore@KeyBank.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Madore",
+                "givenName": "Kelly"
+            },
+            "displayName": "Madore, Kelly J",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/d327fd2e-1847-4196-85be-19d1f5b67dc8",
+                "lastModified": "2026-03-06T10:52:23.009962624Z",
+                "created": "2026-03-06T10:52:23.009962624Z"
+            },
+            "groups": [
+                {
+                    "type": "Group",
+                    "value": "dc3b901b-1d95-459b-b7b6-5e69c4242f78",
+                    "display": "confluence-users",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/dc3b901b-1d95-459b-b7b6-5e69c4242f78"
+                }
+            ],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:30edf7b6-0870-48d0-8419-1182596f007a"
+            },
+            "id": "d327fd2e-1847-4196-85be-19d1f5b67dc8",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User"
+            ],
+            "userName": "Chidambarareddy_Guvvala@keybank.com",
+            "emails": [
+                {
+                    "value": "Chidambarareddy_Guvvala@keybank.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Guvvala",
+                "givenName": "Chidambara Reddy"
+            },
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/daa99c40-7f73-453a-88df-b9fe6415b8fb",
+                "lastModified": "2026-02-15T03:36:32.533538615Z",
+                "created": "2026-02-15T03:36:32.533538615Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:f4a68cfe-4ff9-4a0b-865d-fd446e470cc5"
+            },
+            "id": "daa99c40-7f73-453a-88df-b9fe6415b8fb",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "NNINEPI@nonprod.key",
+            "emails": [
+                {
+                    "value": "NNINEPI@nonprod.key",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "Nnineuuser",
+                "givenName": "PreJoiner"
+            },
+            "displayName": "Nnineuuser, PreJoiner E",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/dc291250-1c19-41dd-9588-ab80c171eb95",
+                "lastModified": "2026-03-05T10:23:39.234773371Z",
+                "created": "2026-03-05T10:23:39.234773371Z"
+            },
+            "groups": [
+                {
+                    "type": "Group",
+                    "value": "dc3b901b-1d95-459b-b7b6-5e69c4242f78",
+                    "display": "confluence-users",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/dc3b901b-1d95-459b-b7b6-5e69c4242f78"
+                },
+                {
+                    "type": "Group",
+                    "value": "91e585e8-5a51-486c-9e8c-6aba214e8711",
+                    "display": "Jira-software-users",
+                    "$ref": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Groups/91e585e8-5a51-486c-9e8c-6aba214e8711"
+                }
+            ],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:edbeea13-e438-4206-a646-e799fd0fabfb"
+            },
+            "id": "dc291250-1c19-41dd-9588-ab80c171eb95",
+            "active": true
+        },
+        {
+            "schemas": [
+                "urn:scim:schemas:extension:atlassian-external:1.0",
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:atlassian:2.0:User",
+                "urn:scim:schemas:extension:atlassian-custom:1.0:Attributes",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+            ],
+            "userName": "SIQtest1@test.com",
+            "emails": [
+                {
+                    "value": "SIQtest1@test.com",
+                    "primary": true
+                }
+            ],
+            "name": {
+                "familyName": "test1",
+                "givenName": "SIQ"
+            },
+            "displayName": "SIQ Test1",
+            "meta": {
+                "resourceType": "User",
+                "location": "https://api.atlassian.com/scim/directory/d41ffc67-d779-4c76-a7a1-ee03a5d4eefd/Users/ed45e8a5-7f28-462b-af33-67a8bed17e1a",
+                "lastModified": "2026-02-26T13:25:32.940980992Z",
+                "created": "2026-02-26T13:25:32.940980992Z"
+            },
+            "groups": [],
+            "urn:scim:schemas:extension:atlassian-external:1.0": {
+                "atlassianAccountId": "712020:befba5c4-b256-42fb-97b5-ac2e7a528414"
+            },
+            "id": "ed45e8a5-7f28-462b-af33-67a8bed17e1a",
+            "active": true
+        }
+    ]
 }
-
-String accountPassword = new PasswordGenerator(context).generatePassword(passwordPolicy);
-return accountPassword;
-
-
-
-import sailpoint.api.PasswordGenerator;
-import sailpoint.object.PasswordPolicy;
-import sailpoint.tools.GeneralException;
-
-String PASSWORD_POLICY = "SIQ-PasswordPolicy-DBM-MariaDB";
-String accountPassword = "";
-
-try {
-
-    PasswordPolicy passwordPolicy = context.getObjectByName(PasswordPolicy.class, PASSWORD_POLICY);
-
-    if (passwordPolicy == null) {
-        throw new GeneralException("PasswordPolicy not found: " + PASSWORD_POLICY);
-    }
-
-    accountPassword = new PasswordGenerator(context).generatePassword(passwordPolicy);
-
-} catch (GeneralException e) {
-    log.error("Error generating password", e);
-    throw e;   // rethrow so workflow/rule fails properly
-}
-
-return accountPassword;
